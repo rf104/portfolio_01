@@ -1,14 +1,14 @@
-
 import { Github, Linkedin, Mail, Code, User, Briefcase } from 'lucide-react';
 import ParticleBackground from './components/ParticleBackground';
 import ProjectCard from './components/ProjectCard';
+import holdingArmImage from './images/holding_arm.jpg';
 
 function App() {
   const projects = [
     {
       title: "Blood Bridge",
       description: "A blood donation platform for connecting donors with recipients",
-      image: "./images/holding_arm.jpg",
+      image: holdingArmImage,
       technologies: ["TypeScript","next.js", "TailwindCSS", 'bun.js',"Hono.js"],
       githubUrl: "https://github.com/istiaqueahmedarik/blood_bridge",
       liveUrl: "https://bloodbridge.vercel.app/"
