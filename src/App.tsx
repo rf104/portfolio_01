@@ -5,22 +5,6 @@ import ProjectCard from './components/ProjectCard';
 
 function App() {
   const projects = [
-    // {
-    //   title: "E-Commerce Platform",
-    //   description: "A full-stack e-commerce platform with real-time inventory management",
-    //   image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000",
-    //   technologies: ["React", "Node.js", "MongoDB", "Redux"],
-    //   githubUrl: "#",
-    //   liveUrl: "#"
-    // },
-    // {
-    //   title: "AI Chat Application",
-    //   description: "Real-time chat application with AI-powered responses",
-    //   image: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?auto=format&fit=crop&q=80&w=1000",
-    //   technologies: ["TypeScript", "OpenAI", "Socket.io", "Express"],
-    //   githubUrl: "#",
-    //   liveUrl: "#"
-    // },
     {
       title: "Blood Bridge",
       description: "A blood donation platform for connecting donors with recipients",
@@ -29,14 +13,6 @@ function App() {
       githubUrl: "https://github.com/istiaqueahmedarik/blood_bridge",
       liveUrl: "https://bloodbridge.vercel.app/"
     },
-    // {
-    //   title: "Portfolio Analytics",
-    //   description: "Dashboard for tracking investment portfolio performance",
-    //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
-    //   technologies: ["React", "D3.js", "Firebase", "TailwindCSS"],
-    //   githubUrl: "#",
-    //   liveUrl: "#"
-    // }
   ];
 
   return (
@@ -54,13 +30,13 @@ function App() {
             Passionate about creating innovative solutions that make a difference.
           </p>
           <div className="flex justify-center gap-6">
-            <a href="#" className="text-white hover:text-blue-400 transition-colors">
+            <a href="https://github.com/rf104" className="text-white hover:text-blue-400 transition-colors">
               <Github size={24} />
             </a>
-            <a href="#" className="text-white hover:text-blue-400 transition-colors">
+            <a href="https://www.linkedin.com/in/sajedullah-aref/" className="text-white hover:text-blue-400 transition-colors">
               <Linkedin size={24} />
             </a>
-            <a href="#" className="text-white hover:text-blue-400 transition-colors">
+            <a href="" className="text-white hover:text-blue-400 transition-colors">
               <Mail size={24} />
             </a>
           </div>
@@ -76,9 +52,7 @@ function App() {
           </h2>
           <div className="bg-white/10 backdrop-blur-lg rounded-xl p-8">
             <p className="text-gray-300 text-lg leading-relaxed">
-              With over 5 years of experience in web development, I've worked on various projects
-              ranging from e-commerce platforms to real-time applications. I'm passionate about
-              creating clean, efficient, and user-friendly solutions that solve real-world problems.
+              I am a Full Stack Developer with a passion for building innovative solutions that make a difference. I specialize in creating exceptional digital experiences using the latest technologies. I have experience working with JavaScript, TypeScript, React, Node.js. I am always eager to learn new technologies and take on new challenges.
             </p>
           </div>
         </div>
@@ -92,7 +66,7 @@ function App() {
             Skills
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {['JavaScript', 'TypeScript', 'React', 'Node.js', 'Python', 'AWS', 'Docker', 'GraphQL'].map((skill) => (
+            {['JavaScript', 'TypeScript', 'React', 'Node.js', 'Next.js','C++','C','Git','Github'].map((skill) => (
               <div key={skill} className="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-center hover:bg-white/20 transition-colors">
                 <span className="text-white text-lg">{skill}</span>
               </div>
@@ -118,7 +92,7 @@ function App() {
 
       {/* Footer */}
       <footer className="py-8 px-4 text-center text-gray-400">
-        <p>© 2024 Your Name. All rights reserved.</p>
+        <p>© 2025 rf_104. All rights reserved.</p>
       </footer>
     </div>
   );
