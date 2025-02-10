@@ -5,30 +5,38 @@ import ProjectCard from './components/ProjectCard';
 
 function App() {
   const projects = [
+    // {
+    //   title: "E-Commerce Platform",
+    //   description: "A full-stack e-commerce platform with real-time inventory management",
+    //   image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000",
+    //   technologies: ["React", "Node.js", "MongoDB", "Redux"],
+    //   githubUrl: "#",
+    //   liveUrl: "#"
+    // },
+    // {
+    //   title: "AI Chat Application",
+    //   description: "Real-time chat application with AI-powered responses",
+    //   image: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?auto=format&fit=crop&q=80&w=1000",
+    //   technologies: ["TypeScript", "OpenAI", "Socket.io", "Express"],
+    //   githubUrl: "#",
+    //   liveUrl: "#"
+    // },
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce platform with real-time inventory management",
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000",
-      technologies: ["React", "Node.js", "MongoDB", "Redux"],
-      githubUrl: "#",
-      liveUrl: "#"
+      title: "Blood Bridge",
+      description: "A blood donation platform for connecting donors with recipients",
+      image: "./images/holding_arm.jpg",
+      technologies: ["TypeScript","next.js", "TailwindCSS", 'bun.js',"Hono.js"],
+      githubUrl: "https://github.com/istiaqueahmedarik/blood_bridge",
+      liveUrl: "https://bloodbridge.vercel.app/"
     },
-    {
-      title: "AI Chat Application",
-      description: "Real-time chat application with AI-powered responses",
-      image: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?auto=format&fit=crop&q=80&w=1000",
-      technologies: ["TypeScript", "OpenAI", "Socket.io", "Express"],
-      githubUrl: "#",
-      liveUrl: "#"
-    },
-    {
-      title: "Portfolio Analytics",
-      description: "Dashboard for tracking investment portfolio performance",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
-      technologies: ["React", "D3.js", "Firebase", "TailwindCSS"],
-      githubUrl: "#",
-      liveUrl: "#"
-    }
+    // {
+    //   title: "Portfolio Analytics",
+    //   description: "Dashboard for tracking investment portfolio performance",
+    //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
+    //   technologies: ["React", "D3.js", "Firebase", "TailwindCSS"],
+    //   githubUrl: "#",
+    //   liveUrl: "#"
+    // }
   ];
 
   return (
