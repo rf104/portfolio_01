@@ -23,7 +23,7 @@ function App() {
       <header className="min-h-screen flex items-center justify-center px-4">
         <div className="text-center">
           <h1 className="text-6xl font-bold text-white mb-6 animate-fade-in">
-            Hi, I'm <span className="text-blue-400">Aref</span>
+            Hi, I'm <span className="text-blue-400">Aref👋</span>
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Full Stack Developer specializing in building exceptional digital experiences.
