@@ -26,8 +26,7 @@ function App() {
             Hi, I'm <span className="text-blue-400">Aref👋</span>
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Full Stack Developer specializing in building exceptional digital experiences.
-            Passionate about creating innovative solutions that make a difference.
+            Tech enthusiast,a passionate leraner. I love to build things that make a difference.
           </p>
           <div className="flex justify-center gap-6">
             <a href="https://github.com/rf104" className="text-white hover:text-blue-400 transition-colors">
@@ -52,7 +51,8 @@ function App() {
           </h2>
           <div className="bg-white/10 backdrop-blur-lg rounded-xl p-8">
             <p className="text-gray-300 text-lg leading-relaxed">
-              I am a Full Stack Developer with a passion for building innovative solutions that make a difference. I specialize in creating exceptional digital experiences using the latest technologies. I have experience working with JavaScript, TypeScript, React, Node.js. I am always eager to learn new technologies and take on new challenges.
+            I am an undergraduate student in Computer Science and Engineering at Military Institute of Science and Technology. I am a self-taught web developer. I have been working with web technologies for the past few years. I have experience in building web applications using React, Next.js, and Node.js.
+            I am passionate about learning new technologies and building projects that make a difference. I am always looking for new opportunities to learn and grow as a developer.
             </p>
           </div>
         </div>
