@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { Github, Linkedin, Mail, Code, User, Briefcase } from 'lucide-react';
 import ParticleBackground from './components/ParticleBackground';
 import ProjectCard from './components/ProjectCard';
@@ -42,7 +42,7 @@ function App() {
         </div>
         <div className="text-center md:text-left">
           <h1 className="text-6xl font-bold text-white mb-6 animate-fade-in">
-            Hi, I'm <span className="text-blue-400">Aref👋</span>
+            Hi, I'm <span className="text-blue-400"><i>AREF</i>👋</span>
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto md:mx-0">
             Tech enthusiast, a passionate learner. I love to build things that make a difference.
