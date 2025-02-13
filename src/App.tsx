@@ -2,8 +2,23 @@ import { Github, Linkedin, Mail, Code, User, Briefcase } from 'lucide-react';
 import ParticleBackground from './components/ParticleBackground';
 import ProjectCard from './components/ProjectCard';
 import holdingArmImage from './images/holding_arm.jpg';
+import profile1 from './images/2.jpg';
+import profile2 from './images/6.jpg';
+import './index.css';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [profileImage, setProfileImage] = useState(profile1);
+  const [fadeClass, setFadeClass] = useState('animate-fade-in');
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setProfileImage((prevImage) => (prevImage === profile1 ? profile2 : profile1));
+      setFadeClass('animate-fade-in');
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, []);
   const projects = [
     {
       title: "Blood Bridge",
@@ -21,6 +36,10 @@ function App() {
       
       {/* Header/Hero Section */}
       <header className="min-h-screen flex items-center justify-center px-4">
+        <div className='flex flex-col-2 justify-between items-center gap-2'>
+          <div className={`profile-image ${fadeClass}`}>
+            <img src={profileImage} alt="profile picture" className="rounded h-80 w-60 mx-auto" />
+          </div>
         <div className="text-center">
           <h1 className="text-6xl font-bold text-white mb-6 animate-fade-in">
             Hi, I'm <span className="text-blue-400">Aref👋</span>
@@ -39,6 +58,7 @@ function App() {
               <Mail size={24} />
             </a>
           </div>
+        </div>
         </div>
       </header>
 
