@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import { Github, Linkedin, Mail, Code, User, Briefcase } from 'lucide-react';
 import ParticleBackground from './components/ParticleBackground';
 import ProjectCard from './components/ProjectCard';
@@ -5,7 +6,6 @@ import holdingArmImage from './images/holding_arm.jpg';
 import profile1 from './images/2.jpg';
 import profile2 from './images/6.jpg';
 import './index.css';
-import { useEffect, useState } from 'react';
 
 function App() {
   const [profileImage, setProfileImage] = useState(profile1);
@@ -19,6 +19,7 @@ function App() {
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []);
+
   const projects = [
     {
       title: "Blood Bridge",
@@ -35,19 +36,18 @@ function App() {
       <ParticleBackground />
       
       {/* Header/Hero Section */}
-      <header className="min-h-screen flex items-center justify-center px-4">
-        <div className='flex flex-col-2 justify-between items-center gap-2'>
-          <div className={`profile-image ${fadeClass}`}>
-            <img src={profileImage} alt="profile picture" className="rounded h-80 w-60 mx-auto" />
-          </div>
-        <div className="text-center">
+      <header className="min-h-screen flex flex-col items-center justify-center px-4 md:flex-row md:justify-between">
+        <div className={`profile-image ${fadeClass} mb-4 md:mb-0 p-20`}>
+          <img src={profileImage} alt="profile picture" className="rounded h-80 w-60 mx-auto" />
+        </div>
+        <div className="text-center md:text-left">
           <h1 className="text-6xl font-bold text-white mb-6 animate-fade-in">
             Hi, I'm <span className="text-blue-400">Aref👋</span>
           </h1>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Tech enthusiast,a passionate leraner. I love to build things that make a difference.
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto md:mx-0">
+            Tech enthusiast, a passionate learner. I love to build things that make a difference.
           </p>
-          <div className="flex justify-center gap-6">
+          <div className="flex justify-center md:justify-start gap-6">
             <a href="https://github.com/rf104" className="text-white hover:text-blue-400 transition-colors">
               <Github size={24} />
             </a>
@@ -58,7 +58,6 @@ function App() {
               <Mail size={24} />
             </a>
           </div>
-        </div>
         </div>
       </header>
 
@@ -71,8 +70,8 @@ function App() {
           </h2>
           <div className="bg-white/10 backdrop-blur-lg rounded-xl p-8">
             <p className="text-gray-300 text-lg leading-relaxed">
-            I am an undergraduate student in Computer Science and Engineering at Military Institute of Science and Technology. I am a self-taught web developer. I have been working with web technologies for the past few years. I have experience in building web applications using React, Next.js, and Node.js.
-            I am passionate about learning new technologies and building projects that make a difference. I am always looking for new opportunities to learn and grow as a developer.
+              I am an undergraduate student in Computer Science and Engineering at Military Institute of Science and Technology. I am a self-taught web developer. I have been working with web technologies for the past few years. I have experience in building web applications using React, Next.js, and Node.js.
+              I am passionate about learning new technologies and building projects that make a difference. I am always looking for new opportunities to learn and grow as a developer.
             </p>
           </div>
         </div>
