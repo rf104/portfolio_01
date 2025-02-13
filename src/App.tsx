@@ -1,25 +1,35 @@
-import  { useEffect, useState } from 'react';
+import  { useEffect, useRef, useState } from 'react';
 import { Github, Linkedin, Mail, Code, User, Briefcase } from 'lucide-react';
 import ParticleBackground from './components/ParticleBackground';
 import ProjectCard from './components/ProjectCard';
 import holdingArmImage from './images/holding_arm.jpg';
 import profile1 from './images/2.jpg';
 import profile2 from './images/6.jpg';
+import profile3 from './images/11.jpeg';
+import profile4 from './images/12.jpeg';
+import profile5 from './images/14.jpeg';
+
 import './index.css';
 
 function App() {
+  const profiles = [profile1, profile2, profile3, profile4, profile5];
   const [profileImage, setProfileImage] = useState(profile1);
   const [fadeClass, setFadeClass] = useState('animate-fade-in');
+  const currentIndex = useRef(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setProfileImage((prevImage) => (prevImage === profile1 ? profile2 : profile1));
-      setFadeClass('animate-fade-in');
-    }, 3000); // Change image every 3 seconds
+      // Reset animation class
+      setFadeClass('');
+      setTimeout(() => {
+        currentIndex.current = (currentIndex.current + 1) % profiles.length;
+        setProfileImage(profiles[currentIndex.current]);
+        setFadeClass('animate-fade-in');
+      }, 10); // Small timeout to ensure class reset
+    }, 3000);
 
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+    return () => clearInterval(interval);
   }, []);
-
   const projects = [
     {
       title: "Blood Bridge",
@@ -38,7 +48,7 @@ function App() {
       {/* Header/Hero Section */}
       <header className="min-h-screen flex flex-col items-center justify-center px-4 md:flex-row md:justify-between">
         <div className={`profile-image ${fadeClass} mb-4 md:mb-0 p-20`}>
-          <img src={profileImage} alt="profile picture" className="rounded h-80 w-60 mx-auto" />
+          <img src={profileImage} alt="profile picture" className="rounded h-90 w-80 mx-auto" />
         </div>
         <div className="text-center md:text-left">
           <h1 className="text-6xl font-bold text-white mb-6 animate-fade-in">
