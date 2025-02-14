@@ -95,7 +95,7 @@ function App() {
             Skills
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {['JavaScript', 'TypeScript', 'React', 'Node.js', 'Next.js','C++','C','Git','Github'].map((skill) => (
+            {['JavaScript', 'TypeScript', 'React.js', 'Node.js', 'Next.js','C++','C','Git','Github'].map((skill) => (
               <div key={skill} className="bg-white/10 backdrop-blur-lg rounded-xl p-6 text-center hover:bg-white/20 transition-colors">
                 <span className="text-white text-lg">{skill}</span>
               </div>
