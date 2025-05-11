@@ -8,6 +8,7 @@ import profile2 from './images/6.jpg';
 import profile3 from './images/11.jpeg';
 import profile4 from './images/12.jpeg';
 import profile5 from './images/14.jpeg';
+import p2 from './images/42.png'
 
 import './index.css';
 
@@ -42,8 +43,8 @@ function App() {
     {
       title: "MegaBlog",
       description: "A platfrom where people can post blog and read also",
-      image: holdingArmImage,
-      technologies: ["Javascript","react.js", "TailwindCSS", '',"node.js"],
+      image: p2,
+      technologies: ["Javascript","react.js", "TailwindCSS","node.js"],
       githubUrl: "https://github.com/rf104/megablog.git",
       liveUrl: "https://megablog-chi.vercel.app/"
     },
