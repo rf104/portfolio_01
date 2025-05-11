@@ -39,6 +39,14 @@ function App() {
       githubUrl: "https://github.com/istiaqueahmedarik/blood_bridge",
       liveUrl: "https://bloodbridge.vercel.app/"
     },
+    {
+      title: "MegaBlog",
+      description: "A platfrom where people can post blog and read also",
+      image: holdingArmImage,
+      technologies: ["Javascript","react.js", "TailwindCSS", '',"node.js"],
+      githubUrl: "https://github.com/rf104/megablog.git",
+      liveUrl: "https://megablog-chi.vercel.app/"
+    },
   ];
 
   return (
