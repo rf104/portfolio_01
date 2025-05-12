@@ -1,5 +1,5 @@
 import  { useEffect, useRef, useState } from 'react';
-import { Github, Linkedin, Mail, Code, User, Briefcase } from 'lucide-react';
+import { Github, Linkedin, Mail, Code, User, Briefcase, Facebook } from 'lucide-react';
 import ParticleBackground from './components/ParticleBackground';
 import ProjectCard from './components/ProjectCard';
 import holdingArmImage from './images/holding_arm.jpg';
@@ -73,8 +73,11 @@ function App() {
             <a href="https://www.linkedin.com/in/sajedullah-aref/" className="text-white hover:text-blue-400 transition-colors">
               <Linkedin size={24} />
             </a>
-            <a href="" className="text-white hover:text-blue-400 transition-colors">
+            <a href="mailto:sajedullah_aref_104@yahoo.com" className="text-white hover:text-blue-400 transition-colors">
               <Mail size={24} />
+            </a>
+            <a href="https://www.facebook.com/sajedullah.aref.13" className="text-white hover:text-blue-400 transition-colors">
+              <Facebook size={24} />
             </a>
           </div>
         </div>
