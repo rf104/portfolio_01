@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" font-family="Inter, 'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <radialGradient id="g1" cx="15%" cy="10%" r="70%">
+      <stop offset="0" stop-color="#f97316" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="90%" cy="85%" r="65%">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="85%" cy="5%" r="50%">
+      <stop offset="0" stop-color="#64748b" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#64748b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fb923c"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="750" fill="#1c1410"/>
+  <rect width="1200" height="750" fill="url(#g1)"/>
+  <rect width="1200" height="750" fill="url(#g2)"/>
+  <rect width="1200" height="750" fill="url(#g3)"/>
+
+  <!-- navbar -->
+  <rect x="40" y="36" width="1120" height="64" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.15"/>
+  <rect x="64" y="52" width="32" height="32" rx="9" fill="url(#accent)"/>
+  <path d="M73 60h10l6 6v12a2 2 0 0 1-2 2H73a2 2 0 0 1-2-2V62a2 2 0 0 1 2-2z" fill="none" stroke="#1c1410" stroke-width="2"/>
+  <text x="110" y="75" fill="#fff" font-size="21" font-weight="700">DocuMind</text>
+  <text x="218" y="75" fill="#fff" fill-opacity="0.55" font-size="15">PDF Intelligence Studio</text>
+  <rect x="930" y="52" width="210" height="32" rx="16" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.12"/>
+  <circle cx="952" cy="68" r="5" fill="#4ade80"/>
+  <text x="966" y="73" fill="#fff" fill-opacity="0.8" font-size="14">Connected · Gemini</text>
+
+  <!-- sidebar -->
+  <rect x="40" y="124" width="330" height="590" rx="20" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.14"/>
+  <text x="66" y="164" fill="#fff" fill-opacity="0.5" font-size="12" font-weight="600" letter-spacing="1.5">MODEL SETTINGS</text>
+  <rect x="66" y="178" width="278" height="40" rx="10" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.12"/>
+  <text x="82" y="203" fill="#fff" fill-opacity="0.85" font-size="14">Google Gemini</text>
+  <rect x="66" y="228" width="278" height="40" rx="10" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.12"/>
+  <text x="82" y="253" fill="#fff" fill-opacity="0.85" font-size="14">gemini-2.5-flash</text>
+
+  <text x="66" y="306" fill="#fff" fill-opacity="0.5" font-size="12" font-weight="600" letter-spacing="1.5">UPLOAD DOCUMENTS</text>
+  <rect x="66" y="320" width="278" height="120" rx="14" fill="#f97316" fill-opacity="0.08" stroke="#fb923c" stroke-opacity="0.6" stroke-dasharray="7 6"/>
+  <path d="M205 352v28M193 364l12-12 12 12" fill="none" stroke="#fb923c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="205" y="410" fill="#fff" fill-opacity="0.75" font-size="14" text-anchor="middle">Drop PDFs here</text>
+  <rect x="66" y="454" width="278" height="42" rx="12" fill="url(#accent)"/>
+  <text x="205" y="481" fill="#1c1410" font-size="15" font-weight="700" text-anchor="middle">Process Document</text>
+
+  <text x="66" y="534" fill="#fff" fill-opacity="0.5" font-size="12" font-weight="600" letter-spacing="1.5">DOCUMENT STATS</text>
+  <g fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.12">
+    <rect x="66" y="548" width="134" height="68" rx="12"/>
+    <rect x="210" y="548" width="134" height="68" rx="12"/>
+    <rect x="66" y="626" width="134" height="68" rx="12"/>
+    <rect x="210" y="626" width="134" height="68" rx="12"/>
+  </g>
+  <g fill="#fff" font-size="22" font-weight="700">
+    <text x="82" y="582">48</text><text x="226" y="582">312</text>
+    <text x="82" y="660">21.4k</text><text x="226" y="660">28.5k</text>
+  </g>
+  <g fill="#fff" fill-opacity="0.5" font-size="12">
+    <text x="82" y="602">Pages</text><text x="226" y="602">Chunks</text>
+    <text x="82" y="680">Words</text><text x="226" y="680">Est. tokens</text>
+  </g>
+
+  <!-- main panel -->
+  <rect x="394" y="124" width="766" height="590" rx="20" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.14"/>
+  <!-- tabs -->
+  <rect x="418" y="146" width="236" height="42" rx="12" fill="#ffffff" fill-opacity="0.06"/>
+  <text x="474" y="173" fill="#fff" fill-opacity="0.6" font-size="14" text-anchor="middle">Summary</text>
+  <rect x="534" y="150" width="116" height="34" rx="10" fill="url(#accent)"/>
+  <text x="592" y="173" fill="#1c1410" font-size="14" font-weight="700" text-anchor="middle">Chat</text>
+
+  <!-- user bubble -->
+  <rect x="780" y="214" width="356" height="52" rx="16" fill="url(#accent)"/>
+  <text x="800" y="246" fill="#1c1410" font-size="15" font-weight="500">What were the key findings in Q3?</text>
+
+  <!-- assistant bubble -->
+  <rect x="418" y="290" width="560" height="200" rx="16" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.14"/>
+  <text x="440" y="324" fill="#fff" fill-opacity="0.9" font-size="15">Revenue grew 18% quarter-over-quarter, driven mainly</text>
+  <text x="440" y="348" fill="#fff" fill-opacity="0.9" font-size="15">by enterprise renewals. The report also flags:</text>
+  <circle cx="448" cy="376" r="3" fill="#fb923c"/>
+  <text x="460" y="381" fill="#fff" fill-opacity="0.8" font-size="15">Operating costs down 6% after vendor consolidation</text>
+  <circle cx="448" cy="402" r="3" fill="#fb923c"/>
+  <text x="460" y="407" fill="#fff" fill-opacity="0.8" font-size="15">Churn risk concentrated in the SMB segment</text>
+  <line x1="440" y1="428" x2="956" y2="428" stroke="#ffffff" stroke-opacity="0.12"/>
+  <text x="440" y="452" fill="#fff" fill-opacity="0.5" font-size="12" font-weight="600" letter-spacing="1.2">CITATIONS</text>
+  <rect x="440" y="462" width="150" height="22" rx="11" fill="#f97316" fill-opacity="0.18" stroke="#fb923c" stroke-opacity="0.5"/>
+  <text x="515" y="477" fill="#fdba74" font-size="12" text-anchor="middle">q3-report.pdf · p. 4</text>
+  <rect x="598" y="462" width="156" height="22" rx="11" fill="#f97316" fill-opacity="0.18" stroke="#fb923c" stroke-opacity="0.5"/>
+  <text x="676" y="477" fill="#fdba74" font-size="12" text-anchor="middle">q3-report.pdf · p. 12</text>
+  <rect x="762" y="462" width="156" height="22" rx="11" fill="#f97316" fill-opacity="0.18" stroke="#fb923c" stroke-opacity="0.5"/>
+  <text x="840" y="477" fill="#fdba74" font-size="12" text-anchor="middle">q3-report.pdf · p. 17</text>
+
+  <!-- thinking -->
+  <rect x="418" y="514" width="92" height="40" rx="14" fill="#ffffff" fill-opacity="0.08"/>
+  <circle cx="444" cy="534" r="5" fill="#fb923c"/>
+  <circle cx="464" cy="534" r="5" fill="#fb923c" fill-opacity="0.65"/>
+  <circle cx="484" cy="534" r="5" fill="#fb923c" fill-opacity="0.35"/>
+
+  <!-- input -->
+  <rect x="418" y="642" width="718" height="50" rx="14" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.15"/>
+  <text x="440" y="673" fill="#fff" fill-opacity="0.4" font-size="15">Ask a question about your documents…</text>
+  <rect x="1090" y="650" width="36" height="34" rx="10" fill="url(#accent)"/>
+  <path d="M1100 667h16M1110 660l7 7-7 7" fill="none" stroke="#1c1410" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
