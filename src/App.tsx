@@ -28,7 +28,7 @@ const EMAIL = "sajedullaharef@gmail.com";
 const GITHUB = "https://github.com/rf104";
 const LINKEDIN = "https://www.linkedin.com/in/sajedullah-aref/";
 const LEETCODE = "https://leetcode.com/u/rf_104/";
-const RESUME = "/Md_Sajedullah_Aref_Resume.pdf";
+const RESUME = "/Resume_Sajedullah_Aref.pdf";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -307,7 +307,7 @@ function App() {
                 </a>
                 <a
                   href={RESUME}
-                  download
+                  download="Resume_Sajedullah_Aref.pdf"
                   aria-label="Download resume (PDF)"
                   title="Download PDF"
                   className="inline-flex items-center justify-center px-4 border-l border-white/15 text-gray-300 hover:text-white hover:bg-white/5 transition"
@@ -593,7 +593,7 @@ function App() {
             </a>
             <a
               href={RESUME}
-              download
+              download="Resume_Sajedullah_Aref.pdf"
               className="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-lg border border-white/15 hover:bg-white/5 hover:border-white/30 font-medium transition"
             >
               <Download size={18} />
