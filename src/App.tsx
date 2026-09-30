@@ -20,6 +20,7 @@ import holdingArmImage from "./images/bloodbridge-web.jpg";
 import profileImage from "./images/aref-web.jpg";
 import p2 from "./images/megablog-web.jpg";
 import documindImage from "./images/documind.svg";
+import careerPilotImage from "./images/careerpilot-web.jpg";
 import certificateImage from "./images/deans-list-certificate.jpg";
 
 import "./index.css";
@@ -52,12 +53,21 @@ const highlights = [
 
 const featuredProjects: ProjectCardProps[] = [
   {
+    title: "CareerPilot AI",
+    subtitle: "AI · Career Platform",
+    description:
+      "Scores resumes, matches them to job descriptions with semantic search, maps skill gaps, tracks applications on a Kanban board and generates role-specific interview prep.",
+    image: careerPilotImage,
+    badge: "New",
+    technologies: ["Next.js", "PostgreSQL", "pgvector", "Embeddings", "Tailwind CSS"],
+    liveUrl: "https://career-pilot-ai-two-psi.vercel.app/",
+  },
+  {
     title: "DocuMind",
     subtitle: "AI · RAG Application",
     description:
       "Chat with your PDFs. Generates executive summaries and answers questions strictly from the document, citing the exact page for every answer.",
     image: documindImage,
-    badge: "New",
     technologies: ["Python", "FastAPI", "LangChain", "FAISS", "Next.js"],
     liveUrl: "https://pdftalk01.vercel.app/",
     note: "Free-tier backend: first load may take ~1 min to wake up.",
@@ -85,12 +95,6 @@ const featuredProjects: ProjectCardProps[] = [
 ];
 
 const moreProjects = [
-  {
-    title: "CareerPilot AI",
-    description:
-      "Matches resumes to job descriptions using embeddings and pgvector, highlights skill gaps and generates role-specific interview prep.",
-    technologies: ["PostgreSQL", "pgvector", "Embeddings", "REST APIs"],
-  },
   {
     title: "Virtual Shop",
     description:
@@ -439,7 +443,7 @@ function App() {
             </a>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 gap-6">
             {featuredProjects.map((project) => (
               <ProjectCard key={project.title} {...project} />
             ))}
